@@ -64,10 +64,9 @@
 .section2{}
 
 #card-in {
-    width: 130px;
-    margin: -1px;
-    background-color: #1d1400;
-;
+	width: 125px;
+	margin: -2px;
+	background-color: #1d1400;
 }
 .card-title{-webkit-text-fill-color:whitesmoke;}
 .card-text{#e4c290;}
