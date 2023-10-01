@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Tap apk</title>
+    <link rel="stylesheet" href="TapTap.css" type="Text/css">
+    <script>src="sigma.js"</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+      @media screen and (max-width: 768px) {
+          .hidden-div {
+              display: none;
+          }
+      }
+      table {border-collapse: collapse;
+              width: 90%;
+              color: white;
+              
+               }
+              th, td {
+                border: 2px solid rgb(167, 75, 32);
+                padding: 12px;
+                text-align: left;
+                font-size: large;
+                
+                          }
+.accordion {
+  background-color: rgb(18, 54, 10);
+  color: rgb(227, 228, 211);
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: solid 1px;
+  border-color: #1d140000;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 5px;
+  
+
+
+}
+
+.active, .accordion:hover {
+  background-color:rgb(37, 114, 47);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:rgb(50, 54, 10);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 90%;
+  color: white;
+}
+                          
+  </style>
+</head>
+<body class="main-container" style="scroll-behavior: smooth;">
+  
+  <header class=" header">
+    <div class="row">
+      <div class="col-lg-3 col-md-5 col-6  "> 
+        <div class="col-md-8 col-8 "> <a href="../../index.html"> <img class="logo"  src="../../header/a.jpg" alt=""></a> </div>
+        
+      
+
+    </div>
+        <div class="col-lg-1 col-md-5 col-3 "> 
+            <div class="col-md-8 col-8 "> </div> 
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-3   "><right>
+              <nav class="navbar1 navbar-expand-lg navbar-grey bg-grey ">
+                <div class="navcontainer">
+                                         
+                  <button class="navbar-toggler bg-grey pt-1 ms-auto" style="height: 35px;" type="img" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span ><img class="img-fluid ms-auto" src="../../header/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav bg-grey mb-2 mb-lg-0 ">
+                      
+                      <li class=" nav-item dropdown ">
+                        <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Game Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Action</a></li>
+                          <li><a class="dropdown-item " href="#">Adventure</a></li>
+                          <li><a class="dropdown-item " href="#">RPG</a></li>
+                          <li><a class="dropdown-item " href="#">Simulation</a></li>
+                          <li><a class="dropdown-item " href="#">Strategy</a></li>
+                          <li><a class="dropdown-item " href="#">Sports</a></li>
+                          <li><a class="dropdown-item " href="#">Puzzles</a></li>
+                          <li><a class="dropdown-item " href="#">Racing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          App Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Entertainment</a></li>
+                          <li><a class="dropdown-item " href="#">Messaging</a></li>
+                          <li><a class="dropdown-item " href="#">Productivity</a></li>
+                          <li><a class="dropdown-item " href="#">Social Networking</a></li>
+                          <li><a class="dropdown-item " href="#">Health & fitness</a></li>
+                          <li><a class="dropdown-item " href="#">Shopping</a></li>
+                          <li><a class="dropdown-item " href="#">Potography & Editing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tips&Tricks
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Android tricks</a></li>
+                          <li><a class="dropdown-item " href="#">Mac tricks</a></li>
+                         
+                          <li><a class="dropdown-item " href="#">Windows tricks</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Latest News
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Tech News</a></li>
+                          <li><a class="dropdown-item " href="#">Health News</a></li>
+                         
+                          <li><a class="dropdown-item " href="#">Science News</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About us
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="../../About us/About/About.html">About Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/contact/ContactUs.html">Contact Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Policy/Privacy&Policy.html">PrivacyPolicy</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Disclimer/disclimer.html">Disclimer</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+              </right>
+                  
+            </div> 
+            <div class="hidden-div col-lg-4 col-md-6 col-1 pt-4" >
+              
+              <div class=" headicons ms-auto">
+                <img src="../../header/search_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/person_add_alt_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/shopping_cart_white_24dp.svg"  class="pe-3">
+              </div>
+            </div>
+            </div>
+        </div>
+            
+            
+
+
+        </div>
+
+    </div>
+</header>
+     
+    <section class="secter1">
+      
+        <div class="row " id="logo-position" >
+          <center>
+            
+            <div class="logo-pic">
+                <div id="spacer" ></div>
+                <img class="logoi" width="130" height="130" src="pics/logo-photo.jpg" alt="">
+                <h2 class="text-light">  <strong>Tap Tap apk</strong></h2>
+                <span class="version">2.0</span>
+                <div id="spacer2"></div>
+          
+
+                <p class="discrption-div">
+                  Welcome to the" Apkmastery" website, the exclusive platform for downloading the latest version of TapTap apk.
+                  It's a popular mobile game- sharing community and third- party game store in android platform. you can easily
+                  download the TapTap apk from our website. Download and install the TapTap apk on your smartphone. 
+                  enjoy new gaming experience by installing veraity games.</p>
+                    <div id="spacer3"></div>
+
+                    <h6 class="download-text text-light "><strong>Tap Tap Apk Download Link is Here</strong></h6>
+                    <div id="spacer4"></div>
+                    <div class="btn">
+                        <button class="download-btn text-light"><strong> Download</strong></button>
+                    </div>
+
+                 
+
+
+                    <div id="spacer5"></div>
+                    <section class="wi" id="secter2">
+
+                      <section class="web" >
+                        
+                          <div class="row">
+                            <div id="spacer6"></div>
+                            
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>Tap Tap Apk</strong>  </strong></p>
+                            <p class="text-para">Taptap apk, released on  2016, it's a mobile game sharing community and third party game store developed 
+                              by china  It was available on the Google Play Store and Apple App Store at starting, but it was removed . Taptap apk snappily
+                               gained fashionability among gamers, by its wide selection of games, both indie and AAA, and its vibrant community.  short  on
+                                sanctioned app stores It's a free to install app, user can download and install wide selection of games from Taptap app.</p>
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Tap Tap for developers</strong>  </strong></p>
+                            <p class="text-para">
+                              TapTap apk offers a variety of tools and resources to help developers promote their games and reach a global  followership. 
+                              TapTap apk also offers a variety of monetization options, including in app purchases and advertising.Developers can create 
+                              profiles for their games, submit beta tests, and interact with players directly.</p>
+
+
+                            
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Tap Tap's global expansion</strong>  </strong></p>
+                            <p class="text-para">
+                              Tap Tap apk is a mobile game participating community and third party game store that began in China.Tap Tap apk is unique
+                               because it offers a wide selection of games, including both indie and AAA titles, as well as exclusive beta experiments,
+                                news, and events. It has since expanded to over 170 countries and has a daily active user base of over 9 million. 
+
+                            </p>
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>TapTap's impact on mobile gaming industry</strong>  </strong></p>
+                            <p class="text-para">
+
+                              TapTap apk is having a significant impact on the mobile gaming industry. it is helps to promote Chinese games to the world.
+                               Tap tap apk is helping indie developers reach a global  followership and is also giving gamers early access to new titles.
+                              
+                               </p>
+                               <center> <section class="col-11 col-md-8 col-lg-8">
+                                <div class="row" id="YWi3ub ">
+                                  <img class="img-scroll col-4  img-fluid " src="pics/pic1.jpg" width="150" height="330" alt="">
+                                  <img class="img-scroll col-4 img-fluid " src="pics/pic3.jpg" width="150" height="230" alt="">
+                                  <img class="img-scroll col-4 img-fluid " src="pics/pic2.jpg" width="150" height="230" alt="">
+                                </div>
+                              </section></center>
+                              
+                      </div>
+                      <div class="spacer7"></div>
+                      <div>
+                       
+                        <a href="#sec-6">What is TapTap?</a><br><br>
+                        <a href="#sec-6">What are the advantages of  utilizing Tap Tap apk?</a><br><br>
+                        <a href="#sec-6">How do I download and use Tap Tap Apk?  </a><br><br>
+                        <a href="#sec-6">How to do Troubleshooting in Tap Tap Apk?</a><br><br>
+                        <a href="#sec-6">How to uninstall games from Tap Tap Apk?</a>
+                      </div>
+
+                     <center><div class="box-text col-11 mt-4 p-4" >
+                      <h5>
+                        it is available on iOS App Store and Playstore for Downloading Tap Tap apk.
+                      </h5>
+                    </div>
+                  </center> 
+                  <img class="logoi m-4" width="130" height="130" src="pics/logo-photo.jpg" alt="">
+                   
+                  <center>
+    <table>
+        <tr>
+            <td>Application Name</td>
+            <td>Tap Tap Apk</td>
+            
+        </tr>
+        <tr>
+            <td>Developer</td>
+            <td>TAPTAP PTE.LTD.</td>
+            
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>62.5 MB</td>
+            
+        </tr>
+        <tr>
+          <td>Version</td>
+          <td>2.62.0</td>
+          
+      </tr>
+      <tr>
+        <td>Released Date</td>
+        <td>Sep 26, 2023</td>
+        
+    </tr>
+    <tr>
+      <td>File type</td>
+      <td>Apk</td>
+      
+  </tr>
+    </table>
+    <div id="spacer4"></div>
+    <div class="btn">
+      <button class="download-btn text-light"><strong> Download Now </strong></button>
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Sigma features</strong>  </strong></p>
+  <div class="box-text2 col-11 mt-4 p-4" >
+    <strong class="dis-heading pt-t mb-3">Unique Features of Tap Tap Apk</strong>
+    <ul class="text-para">
+      <li>Tap Tap Apks focus   is its  uniqueness, on indie games and Chinese games .</li>
+      <li> Tap Tap Apk has a wide selection of games that aren't available on other platforms ,
+         and it's a great place to discover new and innovative games .</li>
+      <li>another unique  point of Tap Tap Apk  is its community.</li>
+      <li>Tap Tap Apk  has a large and Daily active community of gamers who share reviews ,  tips, and strategies .</li>
+      <li>This makes it a great place to learn about new games and get help from other noobie  players .</li>
+      
+    
+
+
+     </ul>
+     
+    
+     
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Android Requirements for Sigma Game Apk latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>Android 6.0+</td>
+            <td>Android 5.0</td>
+          </tr>
+          <tr>
+            <td>CPU </td>
+            <td>Octa-Core 1.8GHz</td>
+            <td>Duel-Core 1.2GHz</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>2 GB</td>
+            <td>1 GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>2GB+</td>
+            <td>500 MB+</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>     
+     
+     <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>IOS Requirements for Sigma Game Apk latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>iOS 7+</td>
+            <td>iOS 5.0</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>iPhone 7</td>
+            <td>iPhone 5s</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>1 GB</td>
+            <td>500MB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>1 GB+</td>
+            <td>500mb</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>
+     <div id="spacer4"></div>
+     <section id="sec-6">
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>FAQ</strong>  </strong></p>
+<button class="accordion "> Q. What is TapTap?</button>
+<div class="panel">
+  <p> Tap Tap apk  is a game discovery and download platform for Android devices.
+     it is  expanded  recently to other countries around the world.It is one of the largest and most popular game stores in China</p>
+</div>
+
+<button class="accordion"> Q. What are the advantages of  utilizing Tap Tap apk ?</button>
+<div class="panel">
+  <p> Tap Tap apk offers a number of advantages over other game stores , including . Exclusive deals and discounts on games .
+     A user  friendly interface that makes it  simple to browse and discover new games . A large and different selection of games ,
+       containing numerous indie and Chinese games that are not accessible on other platforms . Detailed game information and reviews 
+       from other players .</p>
+</div>
+
+<button class="accordion"> Q. How do I download and use Tap Tap Apk?  </button>
+<div class="panel">
+  <p>To download and use Tap Tap Apk, simply follow these  way <br>  
+    * Go to the Tap Tap Apk website or download the app from Google Play or the App Store.<br>  
+    * Create an account or log in with your existing account.  <br>
+    * Browse the game library and find a game you want to download. <br> 
+    * Tap the" Download" button and follow the instructions.   or just touch the download button of our website remember our website is safe, fast, smooth.<br> </p>
+</div>
+
+<button class="accordion"> Q. How to do Troubleshooting Tap Tap Apk ?</button>
+<div class="panel">
+  <p>Here are some troubleshooting tips , If you're having problems Tap Tap Apk.
+    Make sure you have a stable internet connection .
+    Make sure your device meets the system conditions for Tap Tap Apk .
+    Clear the Tap Tap app cache and data .
+    Reset your device . still  having problems .
+    Contact Tap Tap Apk support .</p>
+</div>
+
+<button class="accordion"> Q. How to uninstall games from Tap Tap Apk?</button>
+<div class="panel">
+  <p>
+   
+    
+    To uninstall games from Tap Tap Apk just follow these way,
+    
+    Open the Tap Tap app and go to the My Games section
+    
+     long press the game you want to remove install
+    
+    By Tapping the Uninstalling button and remove the games
+     If not removed from your device please reset your phone .
+    now the game is removed from your device and reinstall Tap Tap Apk from our web site , safty first .</p>
+</div>
+</section>
+<div id="spacer4"></div>
+
+<div id="spacer4"></div>
+<footer class="row " id="footer">
+  
+
+  <div class="w-100 bg-#1d1400 " style="height: 22px;"></div>
+
+  <div class="col-6 col-md-3 mx-auto">
+    <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Reviews</h2>
+      <div    ><ul id="menu-footer-menu-3" class="menu">
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Discover</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Latest Android tips &amp; tricks</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">New</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Hot </a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Popular </a>
+        </li>
+    
+    </ul></div></section> </div>
+
+    <div class="col-6 col-md-3 mx-auto">
+      <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">About us</h2>
+        <div    ><ul id="menu-footer-menu-3" class="menu">
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/About/About.html">About</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/contact/ContactUs.html">Contact us</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../About us/Policy/Privacy&Policy.html">Privacy policy</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/Disclimer/disclimer.html">Disclimer</a>
+          </li>
+      
+      </ul></div></section> </div>
+
+      
+
+
+        <div class="col-lg-3 col-md-3 col-6 col-xs-12 mx-auto">
+          <section id="custom_html-2" class="widget_text widget widget_custom_html"><h2 class="widget-title">Newsletter</h2><div class="textwidget custom-html-widget">Get our weekly newsletter.
+          <form method="post" class="gamez-mailchimp" action="#" autocomplete="off" target="_blank">
+          <div class="form-group">
+          <input type="email" class="form-control" name="Your Email" placeholder="Your Email" required="">
+          <button type="submit" class="gamez-btn"><i class="fa fa-paper-plane fa-fw"></i></button>
+          </div>
+          </form>
+          </div></section><section id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Follow Us</h2><div class="textwidget custom-html-widget">
+          <div class="gamez-social-icons">
+          </div>
+          </div></section> </div>
+          <div class="w-100 bg-#1d1400 " style="height: 22px;"></div>
+          
+          
+
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+                       
+                </center>
+
+                      
+                      
+                    </section>
+                          
+                      
+                      
+                      </section>
+
+
+
+            </center>
+            </div>
+        <div class="row width:100%">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide z-index:1;" data-bs-ride="carousel">
+               
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="pics/img1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="pics/img2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="pics/img3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+               
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+               
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+        
+        </div>
+
+    </section>
+    <script src="TapTap.js"></script>
+    
+
+
+
+
+    
+    
+</body>
+</html>

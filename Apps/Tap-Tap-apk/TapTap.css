@@ -219,7 +219,7 @@ margin-left: 10px;}
 .text-para {
 	color: #c5c5c5;
 	font-size: large;
-	text-align: start;
+	text-align: center;
 }
 .spacer7{height: 40px;}
 .spacer8{height: 25px;}
@@ -263,3 +263,7 @@ margin-left: 10px;}
 .widget-title{color: #eee;}
 .tittle-head{padding-left: 10px;}
 .text-position{margin-left: 20px;}
+#YWi3ub {
+	max-width: 1296px;
+}
+.img-scroll{;}
