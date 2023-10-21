@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stumble Guys apk</title>
+    <link rel="stylesheet" href="page.css" type="Text/css">
+    <script>src="page.js"</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style>
+      @media screen and (max-width: 768px) {
+          .hidden-div {
+              display: none;
+          }
+      }
+      table {border-collapse: collapse;
+              width: 90%;
+              color: white;
+              
+               }
+              th, td {
+                border: 2px solid rgb(167, 75, 32);
+                padding: 12px;
+                text-align: left;
+                font-size: large;
+                
+                          }
+.accordion {
+  background-color: rgb(18, 54, 10);
+  color: rgb(227, 228, 211);
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: solid 1px;
+  border-color: #1d140000;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 5px;
+  
+
+
+}
+
+.active, .accordion:hover {
+  background-color:rgb(37, 114, 47);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:rgb(50, 54, 10);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 90%;
+  color: white;
+}
+                          
+  </style>
+  <link rel="icon" type="image/x-icon" href="../../header/logo.jpg">
+</head>
+<body class="main-container" style="scroll-behavior: smooth;">
+  
+  <header class=" header">
+    <div class="row">
+      <div class="col-lg-3 col-md-5 col-6  "> 
+        <div class="col-md-8 col-8 "> <a href="../../index.html"> <img class="logo"  src="../../header/a.jpg" alt=""></a> </div>
+        
+      
+
+    </div>
+        <div class="col-lg-1 col-md-5 col-3 "> 
+            <div class="col-md-8 col-8 "> </div> 
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-3   "><right>
+              <nav class="navbar1 navbar-expand-lg navbar-grey bg-grey ">
+                <div class="navcontainer">
+                                         
+                  <button class="navbar-toggler bg-grey pt-1 ms-auto" style="height: 35px;" type="img" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span ><img class="img-fluid ms-auto" src="../../header/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav bg-grey mb-2 mb-lg-0 ">
+                      
+                      <li class=" nav-item dropdown ">
+                        <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Game Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Action</a></li>
+                          <li><a class="dropdown-item " href="#">Adventure</a></li>
+                          <li><a class="dropdown-item " href="#">RPG</a></li>
+                          <li><a class="dropdown-item " href="#">Simulation</a></li>
+                          <li><a class="dropdown-item " href="#">Strategy</a></li>
+                          <li><a class="dropdown-item " href="#">Sports</a></li>
+                          <li><a class="dropdown-item " href="#">Puzzles</a></li>
+                          <li><a class="dropdown-item " href="#">Racing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          App Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Entertainment</a></li>
+                          <li><a class="dropdown-item " href="#">Messaging</a></li>
+                          <li><a class="dropdown-item " href="#">Productivity</a></li>
+                          <li><a class="dropdown-item " href="#">Social Networking</a></li>
+                          <li><a class="dropdown-item " href="#">Health & fitness</a></li>
+                          <li><a class="dropdown-item " href="#">Shopping</a></li>
+                          <li><a class="dropdown-item " href="#">Potography & Editing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tips&Tricks
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Android tricks</a></li>
+                          <li><a class="dropdown-item " href="#">Mac tricks</a></li>
+                         
+                          <li><a class="dropdown-item " href="#">Windows tricks</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Latest News
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Tech News</a></li>
+                          <li><a class="dropdown-item " href="#">Health News</a></li>
+                         
+                          <li><a class="dropdown-item " href="#">Science News</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About us
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="../../About us/About/About.html">About Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/contact/ContactUs.html">Contact Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Policy/Privacy&Policy.html">PrivacyPolicy</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Disclimer/disclimer.html">Disclimer</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+              </right>
+                  
+            </div> 
+            <div class="hidden-div col-lg-4 col-md-6 col-1 pt-4" >
+              
+              <div class=" headicons ms-auto">
+                <img src="../../header/search_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/person_add_alt_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/shopping_cart_white_24dp.svg"  class="pe-3">
+              </div>
+            </div>
+            </div>
+        </div>
+            
+            
+
+
+        </div>
+
+    </div>
+</header>
+     
+    <section class="secter1">
+      
+        <div class="row " id="logo-position" >
+          <center>
+            
+            <div class="logo-pic">
+                <div id="spacer" ></div>
+                <img class="logoi" width="130" height="130" src="pics/logo-photo.jpg" alt="">
+                <h2 class="text-light">  <strong>Stumble Guys apk</strong></h2>
+                <span class="version">0.58.3</span>
+                <div id="spacer2"></div>
+          
+
+                <p class="discrption-div">
+                  Welcome to the" Apkmastery" website, the exclusive platform for downloading the latest version of Stumble Guys apk.
+                  It's a popular mobile game in android platform. you can easily
+                  download the Stumble Guys apk from our website. Download and install the Stumble Guys apk on your smartphone. 
+                  enjoy new gaming experience by installing veraity games from our website.</p>
+                    <div id="spacer3"></div>
+
+                    <h6 class="download-text text-light "><strong>Stumble Guys apk Download Link is Here</strong></h6>
+                    <div id="spacer4"></div>
+                    <div class="btn">
+                        <button class="download-btn text-light"><strong> Download</strong></button>
+                    </div>
+
+                 
+
+
+                    <div id="spacer5"></div>
+                    <section class="wi" id="secter2">
+
+                      <section class="web" >
+                        
+                          <div class="row">
+                            <div id="spacer6"></div>
+                            
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong> The Birth of a Stumble Guys</strong>  </strong></p>
+                            <p class="text-para">In the world of mobile gaming , of an there's always room for a new twist on the ever popular battle royale genre . Stumble Guys Game , 
+                              developed by Kitka Games , burst onto the scene as a fresh and comically chaotic take on the genre . With its colorful characters, obstacle filled courses , 
+                              and uproarious gameplay ,Stumble Guys Game quickly gained a dedicated fanbase and carved out its own niche in the mobile gaming world .</p>
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Chaotic World Stumble Guys</strong>  </strong></p>
+                            <p class="text-para">
+                              welcomes players to a world that is anything but ordinary . In this game , you take control of quirky , jellybean suchlike characters who compete in a series
+                               of obstacle courses , akin to a game show . Picture a wacky combination of Takeshi' s Castle and the battle royale genre , and you will have a good sense of
+                                what awaits you in Stumble Guys .       
+                                <br> <br>
+                                The objective is simple outlast your competitors and be the last bean standing . However , achieve this goal is 
+                                straightforward . The courses are designed to challenge your timing , coordination , and a healthy dose of luck . With moving platforms , 
+                              swinging pendulums , and  unfaithful jumps , you are in for a wild and  changeable ride .
+
+                            
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Customization and Character Personalization:</strong>  </strong></p>
+                            <p class="text-para">
+                              One of the game's standout features is the wide array of customization options available to players. From wild costumes and vibrant color schemes to amusing hats 
+                              and accessories, you can personalize your jellybean character to stand out from the crowd. 
+                              With countless combinations to choose from , you can express your unique style as you stumble your way to victory .
+
+                            </p>
+
+                           
+
+                               <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>Multiplayer Mayhem:</strong>  </strong></p>
+                               <p class="text-para">Stumble Guys game apk truly shines when played with friends or against online opponents . The multiplayer mode allows you to compete against
+                                 players from around the world in real-time battles . The chaos intensifies as you race to reach the finish line while simultaneously trying to trip up your rivals . 
+                                The unpredictability of each race ensures that no two games are ever the same , making it perfect for hours of lighthearted entertainment .
+                                  </p>
+
+                                  <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>  Simple Controls , Endless Fun   </strong></strong></p>
+                               <p class="text-para"> 
+                                One of Stumble Guys' strengths is its accessibility . The controls are straightforward , making it easy for players of all skill levels to pick up and play . 
+                                You'll find yourself quickly mastering the basics , but don't be fooled the real challenge lies in navigating the insane courses and outsmarting your opponents .  </p>
+
+                               <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>  Free to Play with In App Purchases   </strong></strong></p>
+                               <p class="text-para"> 
+                                Stumble Guys Game follows the popular free to play model , allowing anyone to jump into the action without spending a dime . However , 
+                                there are in app purchases available for those who want to enhance their gaming experience with cosmetic items and other goodies . 
+                                The game strikes a balance that ensures both free and paying players can enjoy the game without feeling disadvantaged .  </p>
+
+                               <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>  Regular Updates and New Content:   </strong></strong></p>
+                               <p class="text-para">  
+                                Kitka Games has shown a commitment to keeping the Stumble Guys experience fresh. Regular updates introduce new courses, costumes, and features, 
+                                ensuring that players always have something new to look forward to. This dedication to evolving the game keeps the community engaged and excited. </p>
+
+
+                              
+                               <center> <section class="col-11 col-md-8 col-lg-8">
+                                <div class="row" id="YWi3ub ">
+                                  <img class="img-scroll col-12  img-fluid " src="pics/pic1.jpg">
+                                  <img class="img-scroll col-6 img-fluid " src="pics/pic2.jpg" >
+                                  <img class="img-scroll col-6 img-fluid " src="pics/pic3.jpg" >
+                                </div>
+                              </section></center>
+                              
+                      </div>
+                      <div class="spacer7"></div>
+                      <div>
+                       
+                        <a href="#sec-6">What's Stumble Guys game apk ?  </a><br><br>
+                        <a href="#sec-6">How do I play the stumble guys game apk ? </a><br><br>
+                        <a href="#sec-6">How can i customize my character in stumble guys game  ?</a><br><br>
+                        <a href="#sec-6">What are the different game modes available in stumble guys game ? </a>
+                        <a href="#sec-6">Are there any power ups in the game ?  </a>
+                        <a href="#sec-6">How can I win in Stumble Guys ?  </a>
+                      </div>
+
+                     <center><div class="box-text col-11 mt-4 p-4" >
+                      <h5>
+                        it is available on iOS App Store and Playstore for Downloading Stumble Guys game apk .
+                      </h5>
+                    </div>
+                  </center> 
+                  <img class="logoi m-4" width="130" height="130" src="pics/logo-photo.jpg" alt="">
+                   
+                  <center>
+    <table>
+        <tr>
+            <td>Application Name</td>
+            <td>Stumble Guys game apk</td>
+            
+        </tr>
+        <tr>
+            <td>Developer</td>
+            <td>Kitka Games</td>
+            
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>200.55 MB</td>
+            
+        </tr>
+        <tr>
+          <td>Version</td>
+          <td>0.58.3</td>
+          
+      </tr>
+      <tr>
+        <td>Released Date</td>
+        <td>Oct 20, 2023</td>
+        
+    </tr>
+    <tr>
+      <td>File type</td>
+      <td>Apk</td>
+      
+  </tr>
+    </table>
+    <div id="spacer4"></div>
+    <div class="btn">
+      <button class="download-btn text-light"><strong> Download Now </strong></button>
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Stumble Guys features</strong></strong></p>
+  <div class="box-text2 col-11 mt-4 p-4" >
+    <strong class="dis-heading pt-t mb-3">Stumble Guys game offers features</strong>
+    <ul class="text-para">
+      <li>customization options for your character  </li>
+       
+        <li>Power ups .  </li>
+        <li>Grueling  multiplayer gameplay .</li>
+        <li>Instigate levels .</li>
+        
+
+      
+    
+
+
+     </ul>
+     
+    
+     
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Android Requirements for Stumble Guys game Apk latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>Android 10+</td>
+            <td>Android 5.1</td>
+          </tr>
+          <tr>
+            <td>CPU </td>
+            <td>Octa-Core 1.8GHz</td>
+            <td>Duel-Core 1.2GHz</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>6 GB</td>
+            <td>3 GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>3GB+</td>
+            <td>1GB</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>     
+     
+     <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>IOS Requirements for Stumble Guys Game Apk latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>iOS 7</td>
+            <td>iOS 5.0</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>iPhone 7</td>
+            <td>iPhone 5s</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>3 GB</td>
+            <td>2 GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>2 GB</td>
+            <td>500 MB</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>
+     <div id="spacer4"></div>
+     <section id="sec-6">
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>FAQ</strong>  </strong></p>
+<button class="accordion "> Q.What's Stumble Guys game apk ? </button>
+<div class="panel">
+  <p> Stumble Guys game is a multiplayer party knockout game developed by Kitka Games. Players compete with each other through 
+     colorful obstacle courses, striving to be the last one standing</p>
+</div>
+
+<button class="accordion"> Q.How do I play the stumble guys game apk ?  </button>
+<div class="panel">
+  <p>In Stumble Guys game , you control a  different character that you must guide through a series of  grueling  obstacles . 
+    The goal is to outrun and outmaneuver other players while avoiding being eliminated .</p>
+</div>
+
+<button class="accordion"> Q.How can i customize my character in stumble guys game  ?  </button>
+<div class="panel">
+  <p>Gamers can personalize their characters by unlocking different skins , outfits , and accessories  .  
+    These customise can be obtained through in game rewards or by purchasing them in the shop .</p>
+</div>
+
+<button class="accordion"> Q.What are the different game modes available in stumble guys game ?  </button>
+<div class="panel">
+  <p>Stumble Guys offers a different range of game modes , including races , team based challenges , 
+    and  colorful obstacle courses . Each mode presents its own unique set of challenges and objectives .</p>
+</div>
+
+<button class="accordion"> Q.Are there any power ups in the game ?   </button>
+<div class="panel">
+  <p> Yes , Stumble Guys features  colorful power ups that can give you an advantage during races . 
+    These power ups can help you overcome obstacles or hinder your opponents ' progress .  </p>
+</div>
+
+<button class="accordion"> Q.How can I win in Stumble Guys ? </button>
+<div class="panel">
+  <p> To win , you must successfully navigate through the obstacle courses , avoiding pitfalls and staying ahead of other players . 
+    The last player standing or the first player to cross the finish line wins the round .  </p>
+</div>
+
+<button class="accordion"> Q.How to uninstall Stumble Guys game ?</button>
+<div class="panel">
+  <p>
+   
+    
+    To uninstall Stumble Guys Game just follow these way,
+    
+    go to the Stumble Guys Game appinfo and click the uninstall button and click ok
+    or long press the Stumble Guys game and
+    tap the Uninstalling button and remove the game .
+     If not removed from your device please reset your phone .
+    now the game is removed from your device and reinstall Stumble Guys Apk from our web site , safty first .</p>
+</div>
+</section>
+<div id="spacer4"></div>
+<p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>  Conclusion   </strong></strong></p>
+<p class="text-para"> 
+  Stumble Guys is a delightful addition to the mobile gaming landscape . Its unique blend of humor , chaos , and competition sets it apart 
+  from the crowded battle royale genre . Whether you're looking for a game to enjoy with friends or a quick dose of hilarious entertainment , 
+  Stumble Guys delivers. So, strap on your jellybean costume, prepare to stumble , and embrace the mayhem in this uproarious mobile game .  </p>
+
+<div id="spacer4"></div>
+<footer class="row " id="footer">
+  
+
+  <div class="w-100 bg-#1d1400 " style="height: 22px;"></div>
+
+  <div class="col-6 col-md-3 mx-auto">
+    <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Reviews</h2>
+      <div    ><ul id="menu-footer-menu-3" class="menu">
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Discover</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Latest Android tips &amp; tricks</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">New</a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Hot </a>
+        </li>
+        <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+          <a class="decoretion" href="#">Popular </a>
+        </li>
+    
+    </ul></div></section> </div>
+
+    <div class="col-6 col-md-3 mx-auto">
+      <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">About us</h2>
+        <div    ><ul id="menu-footer-menu-3" class="menu">
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/About/About.html">About</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/contact/ContactUs.html">Contact us</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../About us/Policy/Privacy&Policy.html">Privacy policy</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="../../About us/Disclimer/disclimer.html">Disclimer</a>
+          </li>
+      
+      </ul></div></section> </div>
+
+      
+
+
+        <div class="col-lg-3 col-md-3 col-6 col-xs-12 mx-auto">
+          <section id="custom_html-2" class="widget_text widget widget_custom_html"><h2 class="widget-title">Newsletter</h2><div class="textwidget custom-html-widget">Get our weekly newsletter.
+          <form method="post" class="gamez-mailchimp" action="#" autocomplete="off" target="_blank">
+          <div class="form-group">
+          <input type="email" class="form-control" name="Your Email" placeholder="Your Email" required="">
+          <button type="submit" class="gamez-btn"><i class="fa fa-paper-plane fa-fw"></i></button>
+          </div>
+          </form>
+          </div></section><section id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Follow Us</h2><div class="textwidget custom-html-widget">
+          <div class="gamez-social-icons">
+          </div>
+          </div></section> </div>
+          <div class="w-100 bg-#1d1400 " style="height: 22px;"></div>
+          
+          
+
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+                       
+                </center>
+
+                      
+                      
+                    </section>
+                          
+                      
+                      
+                      </section>
+
+
+
+            </center>
+            </div>
+        <div class="row width:100%">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide z-index:1;" data-bs-ride="carousel">
+               
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="pics/img1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="pics/img2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="pics/img3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+               
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+               
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+        
+        </div>
+
+    </section>
+    <script src="TapTap.js"></script>
+    
+
+
+
+
+    
+    
+</body>
+</html>
