@@ -1,4 +1,4 @@
-.main-container{background-color:#1d1400;
+.main-container{background-color:#ffffff;
     font: 100% Trebuchet MS,Helvetica,Arial,sans-serif;
     counter-reset: top-list 0;
     counter-reset: answer 0;
@@ -10,7 +10,7 @@
 .header {
 	width: 100%;
 	height: 64px;
-	background: linear-gradient(124deg,#000 20%, #000000d5 100%);
+	background: linear-gradient(124deg,#000 20%, #000000 100%);
 	z-index: 350;
 	position: sticky;
 }
@@ -83,7 +83,7 @@ z-index: 102;
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	background-color: #1d1400f8;
+	background-color: #fffffff8;
 	text-align: center;
 	height: fit-content;
 }
@@ -116,18 +116,18 @@ font-size: 28px;
 font-weight: 700;
 display: inline;
 padding-right: 10px;
-color:#d7d4d1;
+color:#000000;
 }
 .version {
-letter-spacing: -.6px;
-font-size: 16px;
-font-weight: 700;
-margin: 0;
-color: #819ccf;
+	letter-spacing: -.6px;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+	color: #ffa700;
 }
 .licenses {
 text-transform: capitalize;
-color:  wheat;
+color:  rgb(0, 0, 0);
 padding: 1px;
 white-space: nowrap;
 font-family: inherit!important;
@@ -137,7 +137,7 @@ background-color: rgba(28, 209, 28, 0.5);
 }
 .formats {
 background-color: rgba(82, 82, 82, 0.5);
-color: wheat;
+color: rgb(0, 0, 0);
 padding: 1px;
 
 }
@@ -146,19 +146,19 @@ height: 1.2rem;
 font-size: .75rem;
 line-height: 1.2rem;
 padding-left: 16px;
-color: #fa8c1694;
+color: #00000094;
 background-image: url(/images/stars-solid.svg);
 background-repeat: no-repeat;
 background-position: left 2px;
 background-size: 13px;
 }
 .verified-safety{text-decoration: none;
-color:#434c68;
+color:#685543;
 margin-left: 10px;}
 .space2{height: 25px;}
 .discrption-div {
    text-align: center;
-   color: #c5c5c5;
+   color: #ffffffde;
    font-size: large;
 }
 .download-text{font-size: larger;}
@@ -201,7 +201,7 @@ margin-left: 10px;}
 	background-color: #04642d;
 }
 .heading-div{
-	background: linear-gradient(124deg, #000 40%, #ff9900 100%);
+	background: linear-gradient(124deg, #000000 40%, #000000 100%);
 	padding: 10px 20px;
 	color: #fff;
 	margin-left: -20px;
@@ -211,25 +211,25 @@ margin-left: 10px;}
  .wi{
     height: fit-content;
 	width: 100%;
-    background-color:  #1d1400f8;
+    background-color:  #fffffff8;
 }
 #spacer6{
     height: 12px;
 }
 .text-para {
-	color: #c5c5c5;
+	color: #242222;
 	font-size: large;
 	text-align: start;
 }
-.spacer7{height: 40px;}
+.spacer7{height: 15px;}
 .spacer8{height: 25px;}
 .spacer9{height: 25px;}
 
 .box-text {
 	width: 600px;
 	height: auto;
-	border: 2px solid red;
-	color:  #c5c5c5;
+	border: 2px solid rgb(255, 0, 0);
+	color:  #000000;
 }
 .table-details1{
 	width: 400px;
