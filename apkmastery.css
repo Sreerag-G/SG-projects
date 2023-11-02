@@ -12,7 +12,7 @@
 .logo {
 	height: 52px;
 	width: 158px;
-	margin-left: 2px;
+	margin-left: 3px;
 }
 
 .navbar-nav {
@@ -24,7 +24,7 @@
 	--bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
 	list-style: none;
 	float: right;
-    
+    background: linear-gradient(124deg,#000000b7 20%, #000000cb 100%);
    
     border-radius: 10%;
 }
@@ -83,6 +83,10 @@
 	margin-bottom: var(--bs-card-title-spacer-y);
 	color: var(--bs-card-title-color);
 	
+}
+#spacer4{
+    height: 20px;
+    
 }
 #card-heading {
 	font-size: 14px;
