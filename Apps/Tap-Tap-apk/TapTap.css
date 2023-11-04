@@ -1,11 +1,5 @@
 .main-container{background-color:#ffffff;
-    font: 100% Trebuchet MS,Helvetica,Arial,sans-serif;
-    counter-reset: top-list 0;
-    counter-reset: answer 0;
-    text-align: center;
-    color: #555;
-
-    -webkit-text-size-adjust: 100%
+    
 }
 .header {
 	width: 100%;
