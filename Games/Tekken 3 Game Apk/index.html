@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 3</title>
+    <link rel="stylesheet" href="page.css" type="Text/css">
+    <script>src="page.js"</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <style> @media screen and (max-width: 878px){
+      .hidden-div {
+          display: none;
+      } }
+      a{text-decoration: none;}
+      
+      
+      table {border-collapse: collapse;
+              width: 90%;
+              color: rgb(0, 0, 0);
+              
+               }
+              th, td {
+                border: 2px solid rgb(167, 75, 32);
+                padding: 12px;
+                text-align: left;
+                font-size: large;
+                
+                          }
+.accordion {
+  background-color: rgb(18, 54, 10);
+  color: rgb(227, 228, 211);
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: solid 1px;
+  border-color: #1d140000;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin: 5px;
+  
+
+
+}
+
+.active, .accordion:hover {
+  background-color:rgb(37, 114, 47);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:rgb(50, 54, 10);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 90%;
+  color: white;
+}
+                          
+  </style>
+  <link rel="icon" type="image/x-icon" href="../../header/logo.jpg">
+</head>
+<body class="main-container" style="scroll-behavior: smooth;">
+  
+  <header class=" header">
+    <div class="row">
+        <div class="col-lg-3 col-md-2 col-6  "> 
+            <div > <a href="../../index.html"> <img class="logo"  src="../../header/a.jpg" alt=""></a> </div>
+            
+          
+
+        </div>
+        <div class="col-lg-1 col-md-1  col-3 "> 
+            <div></div> 
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-3  "><right>
+              <nav class="navbar1 navbar-expand-md navbar-grey bg-grey  ">
+                <div class="navcontainer">
+                                         
+                  <button class="navbar-toggler bg-grey pt-1 ms-auto" style="height: 35px;" type="img" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span ><img class="" src="../../header/menu_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0  ">
+                      
+                      <li class=" nav-item dropdown img-fluid ">
+                        <a class="nav-link text-warning dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Game Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Action</a></li>
+                          <li><a class="dropdown-item " href="#">Adventure</a></li>
+                          <li><a class="dropdown-item " href="#">RPG</a></li>
+                          <li><a class="dropdown-item " href="#">Simulation</a></li>
+                          <li><a class="dropdown-item " href="#">Strategy</a></li>
+                          <li><a class="dropdown-item " href="#">Sports</a></li>
+                          <li><a class="dropdown-item " href="#">Puzzles</a></li>
+                          <li><a class="dropdown-item " href="#">Racing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          App Categorys
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Entertainment</a></li>
+                          <li><a class="dropdown-item " href="#">Messaging</a></li>
+                          <li><a class="dropdown-item " href="#">Productivity</a></li>
+                          <li><a class="dropdown-item " href="#">Social Networking</a></li>
+                          <li><a class="dropdown-item " href="#">Health & fitness</a></li>
+                          <li><a class="dropdown-item " href="#">Shopping</a></li>
+                          <li><a class="dropdown-item " href="#">Potography & Editing</a></li>
+                        </ul>
+                      </li>
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Tips&Tricks
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="#">Android tricks</a></li>
+                          <li><a class="dropdown-item " href="#">Mac tricks</a></li>
+                         
+                          <li><a class="dropdown-item " href="#">Windows tricks</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class=" nav-item dropdown  ">
+                        <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About us
+                        </a>
+                        <ul class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item " href="../../About us/About/About.html">About Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/contact/ContactUs.html">Contact Us</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Policy/Privacy&Policy.html">PrivacyPolicy</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a></li>
+                          <li><a class="dropdown-item " href="../../About us/Disclimer/disclimer.html">Disclimer</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+              </right>
+                  
+            </div> 
+            <div class="hidden-div col-lg-4 col-md-3 col-1 pt-4" >
+              
+              <div class=" headicons ms-auto">
+                <img src="../../header/search_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/person_add_alt_white_24dp.svg" class="pe-3" alt="">
+                <img src="../../header/shopping_cart_white_24dp.svg"  class="pe-3">
+              </div>
+            </div>
+            </div>
+        </div>
+            
+            
+
+
+        </div>
+
+    </div>
+</header>
+     
+    <section class="secter1">
+      
+        <div class="row " id="logo-position" >
+          <center>
+            
+            <div class="logo-pic">
+                <div id="spacer" ></div>
+                <img class="logoi" width="130" height="130" src="pics/logo-photo.jpg" alt="">
+                <h2 class="text-light">  <strong>Tekken 3</strong></h2>
+                <span class="version">1.5</span>
+                <div id="spacer2"></div>
+          
+
+                <p class="discrption-div">
+                 
+                  Tekken 3 , released in 1998 , stands as a monumental masterpiece in the world of fighting games . Developed by Namco, this third installment in the
+                   Tekken series brought a surge of innovation and excitement , solidifying its place 
+                  as one of the greatest games in the genre . As we take a trip down memory lane , let's explore the elements that make Tekken 3 a timeless classic .</p>
+                    <div id="spacer3"></div>
+
+                    <h6 class="download-text text-light "><strong>Tekken 3 Download Link is Here</strong></h6>
+                    <div id="spacer4"></div>
+                    <div class="btn">
+                        <button class="download-btn text-light"><strong> Download</strong></button>
+                    </div>
+
+                 
+
+
+                    <div id="spacer5"></div>
+                    <section class="wi" id="secter2">
+
+                      <section class="web" >
+                        
+                          <div class="row">
+                            <div id="spacer6"></div>
+                            
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong> Graphics and Animation of Tekken 3</strong>  </strong></p>
+                            <p class="text-para">
+                              
+                              Tekken 3 game download apk was a visual marvel of its time , pushing the boundaries of the PlayStation's capabilities . 
+                              The character models were exceptionally detailed , and the fluid animation brought each fighter to life with distinct personality . 
+                              From the stoic Jin Kazama to the agile Hwoarang 
+                              , the visual design of the characters was a testament to the meticulous craftsmanship of the developers  .</p>
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Gameplay Mechanics</strong>  </strong></p>
+                            <p class="text-para">
+                              What sets Tekken 3 apart is its intuitive yet deep gameplay mechanics. The game featured a diverse roster of characters, 
+                              each with a unique set of moves and fighting styles. From the powerful punches of Paul Phoenix to the acrobatic kicks of Ling Xiaoyu,
+                               mastering a character felt like an art form. The addition of
+                               sidestep moves added an extra layer of strategy, allowing players to outmaneuver their opponents in three-dimensional space.
+
+                            
+
+                            <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Stellar Storyline</strong>  </strong></p>
+                            <p class="text-para">
+
+
+                              Tekken 3 continued the Mishima family saga , weaving a captivating narrative that added depth to the characters . 
+                              The intertwining story arcs and the mysterious Devil Gene introduced in this installment added a layer of intrigue ,
+                               keeping players engaged beyond the thrilling battles in the King of Iron Fist Tournament .
+
+                            </p>
+
+                           
+
+                               <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>Memorable Soundtrack</strong>  </strong></p>
+                               <p class="text-para">
+                                
+
+                               The game's soundtrack , composed by Nobuyoshi Sano and Keiichi Okabe , remains iconic to this day . 
+                               The music seamlessly blended with the game's atmosphere , enhancing the overall experience . Whether it was the intense beats of the fight sequences or the melodic tunes of the character select screen ,
+                               the soundtrack of Tekken 3 left an indelible mark on players' memories .
+                                  </p>
+                                  <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong> Unlockables and Secrets </strong></strong></p>
+                                  <p class="text-para">  
+                                   Tekken 3 was a treasure trove of unlockables and secrets . From hidden characters like Gon , the pint-sized dinosaur , to unique game modes , 
+                                   players were constantly rewarded for their dedication . 
+                                   The thrill of discovering a new character or unlocking a special costume added an extra layer of excitement to the overall gaming experience .</p>
+
+                                   <p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>Legacy and Impact</strong></strong></p>
+                               <p class="text-para">                              
+
+                                 As the years have passed ,Tekken 3' game download apk influence on the gaming industry remains undeniable .It set a benchmark for fighting games
+                                 ,inspiring future titles and contributing to the evolution of the genre .The Tekken 3 game's enduring popularity is evident through its re-releases 
+                                  on various platforms 
+                                 ,allowing new generations to experience the magic that captivated players in the late '90s  .</p><br>
+
+
+                              
+                               <center> <section class="col-11 col-md-8 col-lg-8">
+                                <div class="row" id="YWi3ub ">
+                                  <img class="img-scroll col-12  img-fluid " src="pics/pic1.jpg">
+                                  <img class="img-scroll col-6 img-fluid " src="pics/pic2.jpg" >
+                                  <img class="img-scroll col-6 img-fluid " src="pics/pic3.jpg" >
+                                </div>
+                              </section></center>
+                              
+                      </div>
+                      <div class="spacer7"></div>
+                      <div>
+                       
+                        <a href="#sec-6">Q . What is Tekken 3 game download apk , and when was it released  ?</a><br><br>
+                        <a href="#sec-6">Q . How can I unlock all the secrets in Tekken 3 game download apk ?</a><br><br>
+                        <a href="#sec-6">Q . What is the legacy of Tekken 3 in the gaming industry ?</a><br><br>
+                        <a href="#sec-6">Q . Who are the main characters in Tekken 3 game Apk ?</a><br><br>
+                        <a href="#sec-6">Q . What's the King of Iron Fist Tournament in Tekken 3 Game Apk ?</a><br><br>
+                        <a href="#sec-6">Q . Are there any hidden characters in Tekken 3 Game apk ?</a><br><br>
+                        
+                      </div>
+
+                     <center><div class="box-text col-11 mt-4 p-4" >
+                      <h5>
+                        it is not available on iOS App Store and Playstore for Downloading Tekken 3 game .
+                      </h5>
+                    </div>
+                  </center> 
+                  <img class="logoi m-4" width="130" height="130" src="pics/logo-photo2.jpg" alt="">
+                   
+                  <center>
+    <table>
+        <tr>
+            <td>Application Name</td>
+            <td>Tekken 3</td>
+            
+        </tr>
+        <tr>
+            <td>Developer</td>
+            <td>BANDAI NAMCO Entertainment Eur</td>
+            
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>188.56 MB</td>
+            
+        </tr>
+        <tr>
+          <td>Version</td>
+          <td>1.5</td>
+          
+      </tr>
+      <tr>
+        <td>Released Date</td>
+        <td>Aug 28, 2023</td>
+        
+    </tr>
+    <tr>
+      <td>File type</td>
+      <td>Apk</td>
+      
+  </tr>
+    </table>
+    <div id="spacer4"></div>
+    <div class="btn">
+      <button class="download-btn text-light"><strong> Download Now </strong></button>
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Tekken 3 features</strong></strong></p>
+  <div class="box-text2 col-11 mt-4 p-4" >
+    <strong class="dis-heading pt-t mb-3">Tekken 3 game offers features</strong>
+    <ul class="text-para">
+      <li>customization options for your Skins of Charecters  </li>
+     </ul>
+     
+    
+     
+  </div>
+  <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>Android Requirements for Tekken 3 latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>Android 10+</td>
+            <td>Android 5.1</td>
+          </tr>
+          <tr>
+            <td>CPU </td>
+            <td>Octa-Core 1.8GHz</td>
+            <td>Duel-Core 1.2GHz</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>6 GB</td>
+            <td>3 GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>3GB+</td>
+            <td>1GB</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>     
+     
+     <div id="spacer4"></div>
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>IOS Requirements for Tekken 3 latest version </strong>  </strong></p>
+     <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Specs</td>
+            <td>Recommending Requirements</td>
+            <td>Minimum Requirements</td>
+          </tr>
+          <tr>
+            <td>OS</td>
+            <td>iOS 7</td>
+            <td>iOS 5.0</td>
+          </tr>
+          <tr>
+            <td>CPU</td>
+            <td>iPhone 7</td>
+            <td>iPhone 5s</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>3 GB</td>
+            <td>2 GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>2 GB</td>
+            <td>500 MB</td>
+          </tr>
+        </tbody>
+
+
+      </table>
+     </div>
+     <div id="spacer4"></div>
+     <section id="sec-6">
+  <p class="heading-div has-text-align-center h has-medium-font-size mt-4 mb-5"><strong><strong>FAQ</strong>  </strong></p>
+<button class="accordion ">Q . What is Tekken 3 game download apk , and when was it released  ?</button>
+<div class="panel">
+  <p>Tekken 3 game download apk is a critically acclaimed fighting game apk developed by Namco . It was released in 1998 for the Sony PlayStation .</p>
+</div>
+
+<button class="accordion">Q . How can I unlock all the secrets in Tekken 3 game download apk ?</button>
+<div class="panel">
+  <p>To unlock secrets like hidden characters and alternate costumes , players should explore different game modes , complete specific challenges , 
+    and experiment with various characters . 
+    The thrill of discovering these secrets adds an extra layer of excitement to the Tekken 3 game download apk experience .</p>
+</div>
+
+<button class="accordion">Q . What is the legacy of Tekken 3 in the gaming industry ?</button>
+<div class="panel">
+  <p>Tekken 3 game download apk has left an indelible mark on the gaming industry , influencing future fighting games and contributing to the evolution of the genre .
+     Its enduring popularity is evident through re releases on various platforms , allowing new generations to experience the classic gameplay .</p>
+</div>
+
+<button class="accordion">Q . Who are the main characters in Tekken 3 game Apk ?</button>
+<div class="panel">
+  <p>The  Tekken 3 game apk boasts a diverse roster of characters , including iconic fighters such as Jin Kazama ,
+     Paul Phoenix , Ling Xiaoyu , Hwoarang , and many more .</p>
+</div>
+
+<button class="accordion">Q . What's the King of Iron Fist Tournament in Tekken 3 Game Apk ?</button>
+<div class="panel">
+  <p> In the Tekken 3 Game Apk the King of Iron Fist Tournament is the central plot device that brings together a different array of fighters , 
+    each with their own motivations and backstories . Players select a 
+    character and engage in  violent , one- on- one battles to emerge as the tournament champion .</p>
+</div>
+
+<button class="accordion">Q . Are there any hidden characters in Tekken 3 Game apk ?</button>
+<div class="panel">
+  <p>Yes , Tekken 3 is known for its plethora of unlockable characters . One of the most famous hidden characters is Gon ,
+     a small dinosaur with a unique fighting style 
+    . Exploring the game and completing certain objectives will unlock these hidden gems .</p>
+</div>
+
+
+
+</section>
+<div id="spacer4"></div>
+<p class="heading-div has-text-align-center h has-medium-font-size mt-5 mb-5"><strong><strong>  Conclusion   </strong></strong></p>
+<p class="text-para"> 
+
+  Tekken 3 game download apk isn't just a game ; it's a timeless journey into the heart of gaming nostalgia . With its groundbreaking graphics , 
+  immersive gameplay , compelling storyline , and unforgettable soundtrack , it continues to hold a special place in 
+  the hearts of gamers worldwide . As we celebrate its legacy , Tekken 3 game download apk stands
+   as a shining example of how a game can transcend its era and become a true classic .</p>
+
+  <div id="spacer4">
+    <div id="spacer4"></div>
+    <img src="../../header/design.jpg" width="220" alt="">
+  </div>
+  <div id="spacer4"></div>
+  
+  <footer class="row " id="footer">
+    
+  
+    <div class="w-100 bg-#1d1400 " style="height: 37px;"></div>
+  
+    <div class="col-6 col-md-3 mx-auto">
+      <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Reviews</h2>
+        <div    ><ul id="menu-footer-menu-3" class="menu">
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="#">Discover</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="#">Latest Android tips &amp; tricks</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="#">New</a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="#">Hot </a>
+          </li>
+          <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+            <a class="decoretion" href="#">Popular </a>
+          </li>
+      
+      </ul></div></section> </div>
+  
+      <div class="col-6 col-md-3 mx-auto">
+        <section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">About us</h2>
+          <div    ><ul id="menu-footer-menu-3" class="menu">
+            <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+              <a class="decoretion" href="../../About us/About/About.html">About</a>
+            </li>
+            <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+              <a class="decoretion" href="../../About us/contact/ContactUs.html">Contact us</a>
+            </li>
+            <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+              <a class="decoretion" href="../../About us/Policy/Privacy&Policy.html">Privacy policy</a>
+            </li>
+            <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+              <a class="decoretion" href="../../About us/Terms/Terms&Conditions.html">Terms & conditions</a>
+            </li>
+            <li id="menu-item-3114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3114">
+              <a class="decoretion" href="../../About us/Disclimer/disclimer.html">Disclimer</a>
+            </li>
+        
+        </ul></div></section> </div>
+  
+        
+  
+  
+          <div class="col-lg-3 col-md-3 col-6 col-xs-12 mx-auto">
+            <section id="custom_html-2" class="widget_text widget widget_custom_html"><h2 class="widget-title">Newsletter</h2><div class="textwidget custom-html-widget">Get our weekly newsletter.
+            <form method="post" class="gamez-mailchimp" action="#" autocomplete="off" target="_blank">
+              <div id="spacer4"></div>
+              <div class="form-group">
+            <input type="email" class="form-control" name="Your Email" placeholder="Your Email" required="">
+            <div id="spacer4"></div>
+            <button type="submit" class="gamez-btn bg-warning">Enter</button>
+            </div>
+            <div id="spacer4"></div>
+            </form>
+            </div></section><section id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widget-title">Follow Us</h2><div class="textwidget custom-html-widget">
+            <div class="gamez-social-icons">
+            </div>
+            </div></section> </div>
+            <div class="w-100 bg-#1d1400 " style="height: 22px;"></div>
+            
+            
+  
+  </footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+                       
+                </center>
+
+                      
+                      
+                    </section>
+                          
+                      
+                      
+                      </section>
+
+
+
+            </center>
+            </div>
+        <div class="row width:100%">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide z-index:1;" data-bs-ride="carousel">
+               
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="pics/img1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="pics/img2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="pics/img3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+               
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+               
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            </div>
+        
+        </div>
+
+    </section>
+    <script src="TapTap.js"></script>
+    
+
+
+
+
+    
+    
+</body>
+</html>
