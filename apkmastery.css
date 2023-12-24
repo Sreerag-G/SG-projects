@@ -66,16 +66,18 @@
     z-index: 102;
 }
 .section12{z-index: 120;}
+.section1{object-fit: cover;}
 .navcontainer{width: 51px;}
 .section2{}
 
 #card-in {
 	width: 105px;
 	margin: 2px;
-	background: #f3dd7b4d;
+	
     border-radius: 10%;
     margin-bottom: 3px;
-    border: none;
+    
+
    
 }
 .card-img-top{border-radius: 10%;}
@@ -98,8 +100,10 @@
 .discover{
     height: 65px;
     width: 148px;
-   background-color: #000000ee;
-   color:#ffffff ;
+    
+    text-decoration: underline;
+  
+   color:#000000 ;
    padding-top: 8px;
    margin-bottom: 10px;
    margin-top: 10px;
@@ -123,7 +127,7 @@
     text-align: center;
     
 }
-.wide-list-contant-text{-webkit-text-fill-color:#f3dd7b4d;}
+.wide-list-contant-text{}
 .edge-title{
     padding-left: 30px;
     text-align: center;
@@ -140,7 +144,7 @@
         display: flex;
         padding: 10px;
         justify-content: space-between;
-        background-color: #f3dd7b4d;
+        background-color: #f8f6eb4d;
         width: 95%;
         border-radius: 4%;
     }
@@ -155,7 +159,7 @@
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
-    background-color: #e7d8b0;
+    background-color: #fcfaf7;
     border-radius: 10%;
     padding-top: 14px;
     
@@ -196,7 +200,7 @@
 }
 #small-border {
 	height: fit-content;
-	background-color: #e6af1633;
+	background-color: #f5e9ca33;
 	border-radius: 0%;
 	padding-left: 40px;
 	padding-top: 20px;
