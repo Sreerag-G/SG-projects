@@ -1,16 +1,22 @@
-// Vanilla JavaScript
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      const targetId = this.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-  
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: 'smooth' // This enables smooth scrolling
-        });
-      }
-    });
-  });
+const appsContainer = document.querySelector('.apps-container');
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+
+let scrollPosition = 0;
+
+scrollLeftButton.addEventListener('click', () => {
+  scrollPosition -= 120;
+  if (scrollPosition < 0) {
+    scrollPosition = 0;
+  }
+  appsContainer.style.transform = translateX(${-scrollPosition}px);
+});
+
+scrollRightButton.addEventListener('click', () => {
+  scrollPosition += 120;
+  const maxScroll = appsContainer.scrollWidth - appsContainer.clientWidth;
+  if (scrollPosition > maxScroll) {
+    scrollPosition = maxScroll;
+  }
+  appsContainer.style.transform = translateX(${-scrollPosition}px);
+});
