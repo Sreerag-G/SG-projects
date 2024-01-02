@@ -1,7 +1,7 @@
 .main-container{background-color:#ffffff;
    
 }
-.header {
+#header {
 	width: 100%;
 	height: 64px;
 	background: #000;
@@ -149,20 +149,31 @@ margin-left: 10px;}
    font-size: large;
 }
 .download-text{font-size: larger;}
-.logo-pic {
+#logo-pic {
    
     background-color: #141003c7;
-    height: fit-content;
-    width: max;
+    height: 900px;
+    
 }
+
 .logoi {
-    object-fit: contain;
+    
     border-radius: 100px;
 }
 #logo-position{
     position: absolute;
     z-index: 100;
+	width: 100%
+
 }
+
+#logo-position2{
+    position: absolute;
+    z-index: 1;
+	width: 100%
+	
+}
+
 #spacer{
     height: 45px;
 
@@ -191,8 +202,7 @@ margin-left: 10px;}
 	background: linear-gradient(124deg, #000000 40%, #000000 100%);
 	padding: 10px 20px;
 	color: #fff;
-	margin-left: -20px;
-	margin-right: -20px;
+	
 	font-size: 19px;
 }
  .wi{
@@ -206,7 +216,7 @@ margin-left: 10px;}
 .text-para {
 	color: #242222;
 	font-size: large;
-	text-align: start;
+	
 }
 .spacer7{height: 15px;}
 .spacer8{height: 25px;}
@@ -238,7 +248,7 @@ margin-left: 10px;}
 	margin-right: auto;
 }#footer {
 	background-color: #04030e;
-	width: 103%;
+	width: 100%;
 }
 
 .decoretion{
